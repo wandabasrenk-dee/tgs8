@@ -10,4 +10,5 @@
         <maven.compiler.release>25</maven.compiler.release>
         <exec.mainClass>com.mycompany.tgs8.Tgs8</exec.mainClass>
     </properties>
+    <name>kasirPOS</name>
 </project>
