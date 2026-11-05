@@ -14,7 +14,7 @@ public class Database {
 
     static final String url = "jdbc:mysql://localhost:3306/moduladpl";
     static final String user = "root";
-    static final String pass = "";
+    static final String pass = "T@rio256";
 
     static Connection conn;
     public static Statement stmt;
