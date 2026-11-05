@@ -8,9 +8,10 @@ package com.mycompany.model;
  *
  * @author phoca
  */
-public class CashPayment extends Payment {
+public class CashPayment implements Payment {
 
+    @Override
     public void pay(double amount) {
-        System.out.println("Bayar" + amount + "cash");
+        System.out.println("Membayar " + amount + " menggunakan Uang Tunai.");
     }
 }

@@ -8,9 +8,10 @@ package com.mycompany.model;
  *
  * @author phoca
  */
-public class QrisPayment extends Payment {
+public class QrisPayment implements Payment {
 
+    @Override
     public void pay(double amount) {
-        System.out.println("Bayar" + amount + "Qris");
+        System.out.println("Membayar " + amount + " menggunakan Qris.");
     }
 }
