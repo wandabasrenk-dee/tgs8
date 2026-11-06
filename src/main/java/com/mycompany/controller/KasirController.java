@@ -8,8 +8,8 @@ package com.mycompany.controller;
  *
  * @author phoca
  */
-import model.*;
-import view.TampilanKasir;
+import com.mycompany.model.*;
+import com.mycompany.view.TampilanKasir;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
@@ -24,7 +24,7 @@ public class KasirController {
         this.db = new Database();
 
         // Memasang Listener ke tombol bayar dari View
-        this.view.getBtnBayar().addActionListener(new ActionListener() {
+        this.view.gettombolBayar().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 prosesPembayaran();
@@ -36,7 +36,7 @@ public class KasirController {
         try {
             // 1. Ambil data dari GUI View
             String inputHarga = view.gettotalHarga().getText();
-            String metode = (String) view.getComboMetode().getSelectedItem();
+            String metode = (String) view.getmetodePembayaran().getSelectedItem();
 
             if (inputHarga.isEmpty()) {
                 JOptionPane.showMessageDialog(view, "Masukkan total harga terlebih dahulu!");
